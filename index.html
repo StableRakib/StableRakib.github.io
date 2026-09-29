@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StableRakib — Keeping Your WordPress Site Fast, Secure & Online</title>
+    <title>StableRakib — Fast, Secure & Online WordPress</title>
     <meta name="description" content="I keep your WordPress website fast, secure, and online so you can focus on your business.">
+	<link rel="icon" type="image/x-icon" src="images/Rakibuzzaman-StableRakib.ico">
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Font Awesome Icons (Deferred via JS for performance, standard load for icons) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='all.min stylesheet'">
     
     <!-- Google Fonts (Optimized weights) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -122,6 +123,7 @@
                 <a href="#how-it-works" class="hover:text-light-text transition-colors">How it Works</a>
                 <a href="#assessment" class="hover:text-light-text transition-colors">Free Assessment</a>
                 <a href="#services" class="hover:text-light-text transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-light-text transition-colors">Testimonials</a>
                 <a href="#pricing" class="hover:text-light-text transition-colors">Pricing</a>
             </nav>
 
@@ -141,6 +143,7 @@
             <a href="#assessment" class="block text-light-muted hover:text-brand-600">Free Assessment</a>
             <a href="#services" class="block text-light-muted hover:text-brand-600">Services</a>
             <a href="#pricing" class="block text-light-muted hover:text-brand-600">Pricing</a>
+            <a href="#testimonials" class="block text-light-muted hover:text-brand-600">Testimonials</a>
             <a href="#booking" class="block w-full text-center px-4 py-2 mt-2 rounded-lg bg-light-text text-white font-medium">Book a Call</a>
         </div>
     </header>
@@ -154,14 +157,14 @@
                     <!-- Photo -->
                     <div class="w-20 h-20 rounded-full border-2 border-dashed border-brand-400 bg-brand-50 flex items-center justify-center overflow-hidden">
                         <!-- Replaced src with dummy image to avoid missing image errors, use provided url in real env -->
-                        <img id="profile-photo" src="Rakibuzzaman-StableRakib.jpg" alt="Rakib" class="w-full h-full object-cover" loading="lazy">
+                        <img id="profile-photo" src="images/Rakibuzzaman-StableRakib.jpg" alt="Rakib" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <!-- Badge -->
                     <div class="flex items-center gap-3 bg-white border border-light-border rounded-full pl-2 pr-4 py-1.5 shadow-sm pulse-badge">
-                        <img src="CCT-Badge-New-Download.png" class="w-8 h-8 rounded-full bg-slate-100 p-0.5 object-cover" alt="CCT Badge" loading="lazy">
+                        <img src="images/CCT-Badge-New.png" class="w-8 h-8 rounded-full bg-slate-100 p-0.5 object-cover" alt="CCT Badge" loading="lazy">
                         <div class="text-left">
                             <p class="text-[10px] font-bold text-light-text uppercase leading-tight tracking-wide">EC-Council C|CT - Certified Cybersecurity Technician</p>
-                            <p class="text-[9px] text-light-muted font-mono"><span class="mr-2">ID: ECC4976018235</span> <a href="https://aspen.eccouncil.org/Verify" class="text-brand-600 hover:underline">Verify</a></p>
+                            <p class="text-[9px] text-light-muted font-mono"><span class="mr-2">ID: ECC4976018235</span> <a href="https://aspen.eccouncil.org/Verify" target="_blank" class="text-brand-600 hover:underline">Verify</a></p>
                         </div>
                     </div>
                 </div>
@@ -195,11 +198,55 @@
             </div>
         </section>
 
+
+		<section id="services" class="py-20 bg-white border-y border-light-border" style="background:#d7efec;">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-extrabold">Everything You Need Included</h2>
+                    <p class="text-slate-400 mt-4" style="color:#787878">Covers all the tech headaches.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="card-light rounded-2xl p-6">
+                        <i class="fa-solid fa-wifi text-3xl text-brand-400 mb-4 block"></i>
+                        <h3 class="text-lg font-bold mb-2">Uptime Monitoring</h3>
+                        <p class="text-slate-400 text-sm">Automated uptime checks with alerts and troubleshooting support when an outage is detected.</p>
+                    </div>
+                    <div class="card-light rounded-2xl p-6">
+                        <i class="fa-solid fa-shield-halved text-3xl text-brand-400 mb-4 block"></i>
+                        <h3 class="text-lg font-bold mb-2">Identify &amp; Reduce Security Risks</h3>
+                        <p class="text-slate-400 text-sm">Security hardening, firewall configuration, and login protection to reduce common attack risks.</p>
+                    </div>
+                    <div class="card-light rounded-2xl p-6">
+                        <i class="fa-solid fa-rotate-left text-3xl text-brand-400 mb-4 block"></i>
+                        <h3 class="text-lg font-bold mb-2">Regular Safe Backups</h3>
+                        <p class="text-slate-400 text-sm">I save online (on-site and off-site) &amp; offline copies of your site on a regular basis. If anything breaks, we can go back in time.</p>
+                    </div>
+                    <div class="card-light rounded-2xl p-6">
+                        <i class="fa-solid fa-gauge-high text-3xl text-brand-400 mb-4 block"></i>
+                        <h3 class="text-lg font-bold mb-2">Make Your Site Fast</h3>
+                        <p class="text-slate-400 text-sm">Nobody likes a slow website! I will perform Performance Optimization focused on measurable improvements in loading speed.</p>
+                    </div>
+                    <div class="card-light rounded-2xl p-6 md:col-span-2 lg:col-span-1">
+                        <i class="fa-solid fa-screwdriver-wrench text-3xl text-brand-400 mb-4 block"></i>
+                        <h3 class="text-lg font-bold mb-2">Safe Updates</h3>
+                        <p class="text-slate-400 text-sm">Updates tested carefully with backups and recovery steps to reduce the risk of disruption.</p>
+                    </div>
+                    <div class="card-light rounded-2xl p-6 md:col-span-2 lg:col-span-1">
+                        <i class="fa-solid fa-screwdriver-wrench text-3xl text-brand-400 mb-4 block"></i>
+                        <h3 class="text-lg font-bold mb-2">Incident Response &amp; Business Continuity Plan</h3>
+                        <p class="text-slate-400 text-sm">A zero-day can occur anytime even with our best efforts. Restore service as quickly as reasonably possible, depending on the incident and hosting environment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
         <section id="assessment" class="py-20 bg-white border-y border-light-border relative z-10">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 fade-up">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl font-semibold text-light-text mb-3">Free 10-Point Assessment</h2>
-                    <p class="text-light-muted">Delivered to your inbox in 24 hours. No obligation.</p>
+                    <p class="text-light-muted">Delivered to your inbox in <strong>24 hours</strong>. No obligation.</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 mb-12">
@@ -209,14 +256,14 @@
                             <span class="text-brand-500 font-mono font-bold mt-0.5">01</span>
                             <div>
                                 <h4 class="font-medium text-light-text">Performance & Speed</h4>
-                                <p class="text-sm text-light-muted">Core Web Vitals check.</p>
+                                <p class="text-sm text-light-muted">website loading time and issues check.</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-4 p-3 rounded-xl hover:bg-slate-50 transition-colors">
                             <span class="text-brand-500 font-mono font-bold mt-0.5">02</span>
                             <div>
                                 <h4 class="font-medium text-light-text">Uptime & Availability Check</h4>
-                                <p class="text-sm text-light-muted">Historical downtime analysis.</p>
+                                <p class="text-sm text-light-muted">Downtime monitoring</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-4 p-3 rounded-xl hover:bg-slate-50 transition-colors">
@@ -230,7 +277,7 @@
                             <span class="text-brand-500 font-mono font-bold mt-0.5">04</span>
                             <div>
                                 <h4 class="font-medium text-light-text">WordPress Basic Security</h4>
-                                <p class="text-sm text-light-muted">Login endpoints & basic firewalls.</p>
+                                <p class="text-sm text-light-muted">Login endpoints &amp; and other important points.</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-4 p-3 rounded-xl hover:bg-slate-50 transition-colors">
@@ -282,7 +329,7 @@
                 </div>
 
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="https://tally.so" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-medium transition-colors shadow-sm">
+                    <a href="https://tally.so/r/ZjABDv" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-medium transition-colors shadow-sm">
                         Get Free Assessment
                     </a>
                     <a href="#sample-report" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-light-text font-medium transition-colors">
@@ -313,95 +360,14 @@
                     </div>
                     <div class="card-light rounded-2xl p-8 text-center">
                         <div class="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center text-brand-500 text-xl font-bold mx-auto mb-6">3</div>
-                        <h3 class="text-lg font-semibold text-light-text mb-2">Daily Care</h3>
-                        <p class="text-light-muted text-sm">24/7 monitoring, backups, and safe updates. You get reports.</p>
+                        <h3 class="text-lg font-semibold text-light-text mb-2">Ongoing Maintenance &amp; Incident Support</h3>
+                        <p class="text-light-muted text-sm">24/7 monitoring, backups, and safe updates + Incident Response &amp; Recovery Plans in place.<br>You get timely reports.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="pricing" class="py-20 bg-white border-y border-light-border fade-up">
-            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-10">
-                    <h2 class="text-3xl font-semibold text-light-text">Pricing Plans</h2>
-                    <p class="text-light-muted mt-3 text-sm">No long-term contracts. Cancel anytime. Prices ex-VAT.</p>
-                </div>
-
-                <!-- Currency Toggle -->
-                <div class="flex justify-center mb-10">
-                    <div class="bg-slate-100 p-1 rounded-lg flex border border-light-border text-sm">
-                        <button onclick="setCurrency('EUR')" id="btn-eur" class="px-5 py-1.5 rounded-md font-semibold bg-white text-light-text shadow-sm transition-all">EUR (€)</button>
-                        <button onclick="setCurrency('USD')" id="btn-usd" class="px-5 py-1.5 rounded-md font-medium text-light-muted hover:text-light-text transition-all">USD ($)</button>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-                    <!-- Essential -->
-                    <div class="card-light rounded-2xl p-8 flex flex-col">
-                        <h3 class="text-lg font-semibold text-light-text mb-1">Essential</h3>
-                        <p class="text-xs text-light-muted mb-6">Basic care for simple sites.</p>
-                        <div class="mb-6">
-                            <span class="text-3xl font-bold text-light-text"><span class="cur-sym">€</span><span class="price-ess">99</span></span>
-                            <span class="text-light-muted text-sm">/mo</span>
-                        </div>
-                        <ul class="space-y-3 text-sm text-light-text mb-8 flex-grow">
-                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> Safe Plugin Updates</li>
-                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> Daily Backups</li>
-                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> 24/7 Uptime Check</li>
-                        </ul>
-                        <a href="#booking" class="w-full block py-2.5 text-center rounded-lg bg-slate-100 text-light-text font-medium hover:bg-slate-200 transition-colors">Select Plan</a>
-                    </div>
-
-                    <!-- Business -->
-                    <div class="card-light rounded-2xl p-8 flex flex-col border-brand-400 relative shadow-md">
-                        <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-100 text-brand-600 border border-brand-200 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wide" style="    z-index:999;background:#fff;">Recommended</div>
-                        <h3 class="text-lg font-semibold text-light-text mb-1">Business</h3>
-                        <p class="text-xs text-light-muted mb-6">Full care for active businesses.</p>
-                        <div class="mb-6">
-                            <span class="text-3xl font-bold text-light-text"><span class="cur-sym">€</span><span class="price-bus">149</span></span>
-                            <span class="text-light-muted text-sm">/mo</span>
-                        </div>
-                        <ul class="space-y-3 text-sm text-light-text mb-8 flex-grow">
-                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> Everything in Essential</li>
-                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> Speed Optimization</li>
-                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> Firewall & Security</li>
-                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> Priority Support</li>
-                        </ul>
-                        <a href="#booking" class="w-full block py-2.5 text-center rounded-lg bg-light-text text-white font-medium hover:bg-black transition-colors">Select Plan</a>
-                    </div>
-
-                    <!-- Pro -->
-                    <div class="card-light rounded-2xl p-8 flex flex-col">
-                        <h3 class="text-lg font-semibold text-light-text mb-1">Pro / Custom</h3>
-                        <p class="text-xs text-light-muted mb-6">For complex or e-commerce sites.</p>
-                        <div class="mb-6">
-                            <span class="text-3xl font-bold text-light-text">From <span class="cur-sym">€</span><span class="price-pro">199</span></span>
-                            <span class="text-light-muted text-sm">/mo</span>
-                        </div>
-                        <ul class="space-y-3 text-sm text-light-text mb-8 flex-grow">
-                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> Everything in Business</li>
-                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> Custom Development Hours</li>
-                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> Staging Server Tests</li>
-                        </ul>
-                        <a href="#booking" class="w-full block py-2.5 text-center rounded-lg bg-slate-100 text-light-text font-medium hover:bg-slate-200 transition-colors">Talk to Me</a>
-                    </div>
-                </div>
-                
-                <!-- Payment Methods -->
-                <div class="text-center">
-                    <p class="text-sm font-medium text-light-muted mb-4">Accepted Payment Methods</p>
-                    <div class="flex flex-wrap justify-center items-center gap-4 sm:gap-8 opacity-75 grayscale hover:grayscale-0 transition-all duration-300">
-                        <span class="flex items-center gap-2 text-light-text font-semibold text-lg"><i class="fa-solid fa-building-columns text-brand-500"></i> Bank Transfer</span>
-                        <span class="flex items-center gap-2 text-light-text font-semibold text-lg"><i class="fa-solid fa-money-check-dollar text-brand-500"></i> ACH</span>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Wise_Logo.svg" alt="Wise" class="h-6 object-contain" loading="lazy">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Payoneer_logo.svg" alt="Payoneer" class="h-6 object-contain" loading="lazy">
-                    </div>
-                    <p class="text-[11px] text-light-muted mt-4">EU VAT reverse charge available. US invoices available.</p>
-                </div>
-
-            </div>
-        </section>
-
+        
         <!-- Certifications & History Section -->
         <section id="background" class="py-20 fade-up bg-slate-50 border-b border-light-border">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -414,7 +380,7 @@
                         </h3>
                         <div class="space-y-4">
                             <div class="bg-white p-4 rounded-xl border border-light-border shadow-sm flex items-start gap-4 hover:border-brand-300 transition-colors">
-                                <img src="CCT-Badge-New-Download.png" class="w-12 h-12 rounded-lg bg-slate-100 p-0.5 object-cover shrink-0" alt="EC-Council" loading="lazy">
+                                <img src="images/CCT-Badge-New.png" class="w-12 h-12 rounded-lg bg-slate-100 p-0.5 object-cover shrink-0" alt="EC-Council" loading="lazy">
                                 <div>
                                     <h4 class="font-semibold text-light-text text-sm">Certified Cybersecurity Technician (C|CT)</h4>
                                     <p class="text-xs text-light-muted mb-1">EC-Council • Issued 2023</p>
@@ -422,23 +388,23 @@
                                 </div>
                             </div>
                             <div class="bg-white p-4 rounded-xl border border-light-border shadow-sm flex items-start gap-4 hover:border-brand-300 transition-colors">
-                                <img src="IBM-Logo.svg" class="w-12 h-12 rounded-lg bg-slate-100 p-0.5 object-cover shrink-0" alt="EC-Council" loading="lazy">
+                                <img src="images/IBM-Logo.svg" class="w-12 h-12 rounded-lg bg-slate-100 p-0.5 object-cover shrink-0" alt="EC-Council" loading="lazy">
                                 <div>
-                                    <h4 class="font-semibold text-light-text text-sm">Introduction to Cybersecurity Tools &amp; Attacks</h4>
+                                    <h4 class="font-semibold text-light-text text-sm">Cybersecurity Tools &amp; Attacks</h4>
                                     <p class="text-xs text-light-muted mb-1">IBM (via Coursera) • Issued 2023</p>
                                     <p class="text-[10px] text-light-muted font-mono bg-slate-100 px-2 py-1 rounded inline-block"><a href="https://coursera.org/verify/6ZML4THP7Y5F" title="Verify" target="_blank">ID: 6ZML4THP7Y5F</a></p>
                                 </div>
                             </div>
                             <div class="bg-white p-4 rounded-xl border border-light-border shadow-sm flex items-start gap-4 hover:border-brand-300 transition-colors">
-                                <img src="TemplateMonster-Certified-partner-Banner.jpg" class="w-12 h-12 rounded-lg bg-slate-100 p-0.5 object-cover shrink-0" alt="EC-Council" loading="lazy">
+                                <img src="images/TemplateMonster-Certified-partner-Banner.jpg" class="w-12 h-12 rounded-lg bg-slate-100 p-0.5 object-cover shrink-0" alt="EC-Council" loading="lazy">
                                 <div>
-                                    <h4 class="font-semibold text-light-text text-sm">Certified Partner &amp; Verified WP Expert</h4>
+                                    <h4 class="font-semibold text-light-text text-sm">Certified Partner &amp; Verified WordPress Expert</h4>
                                     <p class="text-xs text-light-muted mb-1">TemplateMonster • Issued 2019</p>
                                     <p class="text-[10px] text-light-muted font-mono bg-slate-100 px-2 py-1 rounded inline-block"><a href="TemplateMonster-WordPress-Test-Certificate.jpg" title="See Certificate" target="_blank">Certificate</a></p>
                                 </div>
                             </div>
                             <div class="bg-white p-4 rounded-xl border border-light-border shadow-sm flex items-start gap-4 hover:border-brand-300 transition-colors">
-                                <img src="DeVry-University-Maintaining-CYber-Security.jpg" class="w-12 h-12 rounded-lg bg-slate-100 p-0.5 object-cover shrink-0" alt="EC-Council" loading="lazy">
+                                <img src="images/DeVry-University-Maintaining-CYber-Security.jpg" class="w-12 h-12 rounded-lg bg-slate-100 p-0.5 object-cover shrink-0" alt="EC-Council" loading="lazy">
                                 <div>
                                     <h4 class="font-semibold text-light-text text-sm">Maintaining Cyber Security</h4>
                                     <p class="text-xs text-light-muted mb-1">DeVry University • Issued 2016</p>
@@ -507,12 +473,12 @@
                         </div>
                         <p class="text-sm text-light-text mb-6 relative z-10 italic">"Knows his field very well"</p>
                         <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-full justify-center"><img src="mueen-shah.jpg" class="rounded-full"></div>
+                            <div class="w-10 h-10 rounded-full justify-center"><img src="images/mueen-shah.jpg" class="rounded-full"></div>
                             <div>
                                 <p class="text-xs text-light-muted">November 14, 2022</p>
                                 <h4 class="font-semibold text-light-text text-sm">Mueen Shah</h4>
                                 <p class="text-xs text-light-muted">Director of Capture, Contracts, Compliance & International Sales</p>
-                                <p class="text-xs text-dark">Accentuate Technology Inc.</p>
+                                <p class="text-xs text-dark">Accentuate Technology Inc. (USA)</p>
                             </div>
                         </div>
                     </div>
@@ -522,14 +488,13 @@
                         <div class="flex items-center gap-1 mb-4 text-amber-400 text-sm">
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
-                        <p class="text-sm text-light-text mb-6 relative z-10 italic">"A skilled web developer and project manager would love to work with again."</p>
+                        <p class="text-sm text-light-text mb-6 relative z-10 italic">"I have Rakib work on optimizing all my sites. Great work once again. High 90's for GT with a 1 second page load. Great work."</p>
                         <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-full justify-center"><img src="ray-roamer.jpg" class="rounded-full"></div>
+                            <div class="w-10 h-10 rounded-full justify-center"><img src="images/Craig-Heyworth.png" class="rounded-full"></div>
                             <div>
                                 <p class="text-xs text-light-muted">October 6, 2019</p>
-                                <h4 class="font-semibold text-light-text text-sm">Ray Roamer</h4>
-                                <p class="text-xs text-light-muted">Sales Executive</p>
-                                <p class="text-xs text-dark">Signature Group</p>
+                                <h4 class="font-semibold text-light-text text-sm">Craig Heyworth</h4>
+                                <p class="text-xs text-dark">Yeti (USA)</p>
                             </div>
                         </div>
                     </div>
@@ -539,12 +504,13 @@
                         <div class="flex items-center gap-1 mb-4 text-amber-400 text-sm">
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
-                        <p class="text-sm text-light-text mb-6 relative z-10 italic">"Highly recommend the server optimization gig. He squeezed so much performance out of our existing VPS, saving us from having to upgrade our hosting plan."</p>
+                        <p class="text-sm text-light-text mb-6 relative z-10 italic">"An amazing freelancer. Always willing to go the extra mile and help you out with your objectives. Thanks again for the awesome work Rakib!"</p>
                         <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-500 font-bold text-sm">D</div>
+                            <div class="w-10 h-10 rounded-full justify-center"><img src="images/Pavlos-Demetriades.png" class="rounded-full"></div>
                             <div>
-                                <h4 class="font-semibold text-light-text text-sm">David O'Connor</h4>
-                                <p class="text-xs text-light-muted">Blog Network Owner</p>
+                                <p class="text-xs text-light-muted">May 13, 2019</p>
+                                <h4 class="font-semibold text-light-text text-sm">Pavlos Demetriades</h4>
+                                <p class="text-xs text-dark">DomainStar Ltd (Cyprus)</p>
                             </div>
                         </div>
                     </div>
@@ -552,29 +518,7 @@
             </div>
         </section>
 
-        <section id="gigs" class="py-16 bg-slate-50 border-y border-light-border fade-up">
-            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-sm font-bold text-light-muted uppercase tracking-wider mb-6 text-center">Also Available</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div class="bg-white border border-light-border rounded-lg p-5">
-                        <h4 class="font-semibold text-light-text text-sm mb-1">Fast, Secure Web Development</h4>
-                        <p class="text-xs text-light-muted mb-3">Custom built WordPress sites focused on speed.</p>
-                        <a href="#" onclick="openGigModal()" class="text-xs font-medium text-brand-600 hover:underline">Request Quote &rarr;</a>
-                    </div>
-                    <div class="bg-white border border-light-border rounded-lg p-5">
-                        <h4 class="font-semibold text-light-text text-sm mb-1">Server Security Hardening</h4>
-                        <p class="text-xs text-light-muted mb-3">VPS/Dedicated server lockdown (Linux).</p>
-                        <a href="#" onclick="openGigModal()" class="text-xs font-medium text-brand-600 hover:underline">Request Quote &rarr;</a>
-                    </div>
-                    <div class="bg-white border border-light-border rounded-lg p-5">
-                        <h4 class="font-semibold text-light-text text-sm mb-1">Server Speed Optimization</h4>
-                        <p class="text-xs text-light-muted mb-3">Tuning Nginx/Apache/MySQL for performance.</p>
-                        <a href="#" onclick="openGigModal()" class="text-xs font-medium text-brand-600 hover:underline">Request Quote &rarr;</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+        
         <!-- Gig Modal -->
         <div id="gig-modal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-50 hidden items-center justify-center transition-opacity opacity-0">
             <div class="bg-white rounded-xl p-6 max-w-sm w-full mx-4 shadow-xl transform scale-95 transition-transform duration-200" id="gig-modal-content">
@@ -587,50 +531,12 @@
                     <a href="https://wa.me/8801976241050" target="_blank" class="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg bg-[#25D366] text-white font-medium hover:bg-[#1ebd5a] transition-colors text-sm">
                         <i class="fa-brands fa-whatsapp text-lg"></i> Message on WhatsApp
                     </a>
-                    <a href="#" class="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg border border-light-border text-light-text font-medium hover:bg-slate-50 transition-colors text-sm">
+                    <a href="https://tally.so/r/MeoN9E" class="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg border border-light-border text-light-text font-medium hover:bg-slate-50 transition-colors text-sm">
                         <i class="fa-solid fa-envelope"></i> Fill Out Form
                     </a>
                 </div>
             </div>
         </div>
-
-        <section class="py-20 fade-up">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl font-semibold text-light-text">Selected Work</h2>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                    <div class="card-light rounded-xl overflow-hidden group">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=80" alt="Work" class="w-full h-32 object-cover" loading="lazy">
-                        <div class="p-4">
-                            <h4 class="font-medium text-sm text-light-text">E-commerce Speed Optimization</h4>
-                            <p class="text-xs text-light-muted mt-1">Load time reduced by 3.2s</p>
-                        </div>
-                    </div>
-                    <div class="card-light rounded-xl overflow-hidden group">
-                        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&q=80" alt="Work" class="w-full h-32 object-cover" loading="lazy">
-                        <div class="p-4">
-                            <h4 class="font-medium text-sm text-light-text">Malware Recovery</h4>
-                            <p class="text-xs text-light-muted mt-1">Cleaned and secured</p>
-                        </div>
-                    </div>
-                    <div class="card-light rounded-xl overflow-hidden group">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=80" alt="Work" class="w-full h-32 object-cover" loading="lazy">
-                        <div class="p-4">
-                            <h4 class="font-medium text-sm text-light-text">Agency Site Management</h4>
-                            <p class="text-xs text-light-muted mt-1">100% Uptime for 12mo</p>
-                        </div>
-                    </div>
-                    <div class="card-light rounded-xl overflow-hidden group">
-                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&q=80" alt="Work" class="w-full h-32 object-cover" loading="lazy">
-                        <div class="p-4">
-                            <h4 class="font-medium text-sm text-light-text">Server Migration</h4>
-                            <p class="text-xs text-light-muted mt-1">Zero-downtime transfer</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <section id="booking" class="py-20 bg-white border-y border-light-border fade-up">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -660,7 +566,127 @@
                 </div>-->
             </div>
         </section>
-    </main>
+    
+		<section id="pricing" class="py-20 bg-white border-y border-light-border fade-up">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-semibold text-light-text">Pricing Plans</h2>
+                    <p class="text-light-muted mt-3 text-sm">No long-term contracts. Cancel anytime. Prices ex-VAT. EU reverse charge</p>
+                </div>
+
+                <!-- Currency Toggle -->
+                <div class="flex justify-center mb-10">
+                    <div class="bg-slate-100 p-1 rounded-lg flex border border-light-border text-sm">
+                        <button onclick="setCurrency('EUR')" id="btn-eur" class="px-5 py-1.5 rounded-md font-semibold bg-white text-light-text shadow-sm transition-all">EUR (€)</button>
+                        <button onclick="setCurrency('USD')" id="btn-usd" class="px-5 py-1.5 rounded-md font-medium text-light-muted hover:text-light-text transition-all">USD ($)</button>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                    <!-- Essential -->
+                    <div class="card-light rounded-2xl p-8 flex flex-col">
+                        <h3 class="text-lg font-semibold text-light-text mb-1">Essential</h3>
+                        <p class="text-xs text-light-muted mb-6">Basic care for simple sites.</p>
+                        <div class="mb-6">
+                            <span class="text-3xl font-bold text-light-text"><span class="cur-sym">€</span><span class="price-ess">99</span></span>
+                            <span class="text-light-muted text-sm">/mo</span>
+                        </div>
+                        <ul class="space-y-3 text-sm text-light-text mb-8 flex-grow">
+                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> WordPress core/plugin/theme updates</li>
+                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> 24/7 Uptime & SSL monitoring</li>
+                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> On-site Backups - Every 15 days</li>
+                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> WordPress security hardening </li>
+                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> Monthly Malware & vulnerability scanning</li>
+                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> Monthly website health report </li>
+                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> <strong> Incident Response & Disaster Recovery Support - Basic</strong></li>
+                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> Typical email response: 24 business hours </li>
+                        </ul>
+                        <a href="#booking" class="w-full block py-2.5 text-center rounded-lg bg-slate-100 text-light-text font-medium hover:bg-slate-200 transition-colors">Select Plan</a>
+                    </div>
+
+                    <!-- Business -->
+                    <div class="card-light rounded-2xl p-8 flex flex-col border-brand-400 relative shadow-md">
+                        <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-100 text-brand-600 border border-brand-200 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wide" style="    z-index:999;background:#fff;">Recommended</div>
+                        <h3 class="text-lg font-semibold text-light-text mb-1">Business</h3>
+                        <p class="text-xs text-light-muted mb-6">Full care for active businesses.</p>
+                        <div class="mb-6">
+                            <span class="text-3xl font-bold text-light-text"><span class="cur-sym">€</span><span class="price-bus">149</span></span>
+                            <span class="text-light-muted text-sm">/mo</span>
+                        </div>
+                        <ul class="space-y-3 text-sm text-light-text mb-8 flex-grow">
+                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> <strong>Everything in Starter</strong></li>
+                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> On-site + Cloud Backups - Every 7 days</li>
+                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> Malware & vulnerability scanning - Every 15 days</li>
+                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> Advanced performance optimization</li>
+                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> CDN / WAF configuration where appropriate</li>
+                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> <strong>Incident Response & Disaster Recovery Support - Advanced</strong></li>
+                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> <strong>Typical email response: 12–24 business hours</strong></li>
+                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> <strong>WhatsApp text support for urgent website issues</strong></li>
+                        </ul>
+                        <a href="#booking" class="w-full block py-2.5 text-center rounded-lg bg-light-text text-white font-medium hover:bg-black transition-colors">Select Plan</a>
+                    </div>
+
+                    <!-- Pro -->
+                    <div class="card-light rounded-2xl p-8 flex flex-col">
+                        <h3 class="text-lg font-semibold text-light-text mb-1">Pro / Custom</h3>
+                        <p class="text-xs text-light-muted mb-6">For complex or e-commerce sites.</p>
+                        <div class="mb-6">
+                            <span class="text-3xl font-bold text-light-text">From <span class="cur-sym">€</span><span class="price-pro">199</span></span>
+                            <span class="text-light-muted text-sm">/mo</span>
+                        </div>
+                        <ul class="space-y-3 text-sm text-light-text mb-8 flex-grow">
+                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> <strong>Everything in Business</strong></li>
+                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> On-site + Cloud + Offline Backups - Everyday</li>
+                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> Malware & vulnerability scanning - Every 1-7 days</li>
+                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> Performance/Speed & Core Web Vitals Optimization - Every 1-7 days</li>
+                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> Enhanced monitoring frequency</li>
+                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> Expanded maintenance scope</li>
+                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> High priority email support (8–12h) + WhatsApp text/call support</li>
+                        </ul>
+                        <a href="#booking" class="w-full block py-2.5 text-center rounded-lg bg-slate-100 text-light-text font-medium hover:bg-slate-200 transition-colors">Talk to Me</a>
+                    </div>
+                </div>
+                
+                <!-- Payment Methods -->
+                <div class="text-center">
+                    <p class="text-sm font-medium text-light-muted mb-4">Accepted Payment Methods</p>
+                    <div class="flex flex-wrap justify-center items-center gap-4 sm:gap-8 opacity-75 grayscale hover:grayscale-0 transition-all duration-300">
+                        <span class="flex items-center gap-2 text-light-text font-semibold text-lg"><i class="fa-solid fa-building-columns text-brand-500"></i> Bank Transfer</span>
+                        <span class="flex items-center gap-2 text-light-text font-semibold text-lg"><i class="fa-solid fa-money-check-dollar text-brand-500"></i> ACH</span>
+                        <img src="images/wise.png" alt="Wise" class="h-5 object-contain" loading="lazy">
+                        <img src="images/payoneer.png" alt="Payoneer" class="h-5 object-contain" loading="lazy">
+                    </div>
+                    <p class="text-[11px] text-light-muted mt-4">EU VAT reverse charge available. US invoices available.</p>
+                </div>
+
+            </div>
+        </section>
+		
+		<section id="gigs" class="py-16 bg-slate-50 border-y border-light-border fade-up">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-sm font-bold text-light-muted uppercase tracking-wider mb-6 text-center">Also Available</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-white border border-light-border rounded-lg p-5">
+                        <h4 class="font-semibold text-light-text text-sm mb-1">Fast, Secure Web Development</h4>
+                        <p class="text-xs text-light-muted mb-3">Custom built WordPress sites focused on speed.</p>
+                        <a href="#" onclick="openGigModal()" class="text-xs font-medium text-brand-600 hover:underline">Request Quote &rarr;</a>
+                    </div>
+                    <div class="bg-white border border-light-border rounded-lg p-5">
+                        <h4 class="font-semibold text-light-text text-sm mb-1">Server Security Hardening / Speed Optimization</h4>
+                        <p class="text-xs text-light-muted mb-3">VPS/Dedicated server lockdown (Linux) or Tuning Nginx/Apache/MySQL for performance.</p>
+                        <a href="#" onclick="openGigModal()" class="text-xs font-medium text-brand-600 hover:underline">Request Quote &rarr;</a>
+                    </div>
+                    <div class="bg-white border border-light-border rounded-lg p-5">
+                        <h4 class="font-semibold text-light-text text-sm mb-1">Instructional Design/Training (IT/Cybersecurity)</h4>
+                        <p class="text-xs text-light-muted mb-3">Course content creation or training sessions.</p>
+                        <a href="#" onclick="openGigModal()" class="text-xs font-medium text-brand-600 hover:underline">Request Quote &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+		
+	</main>
 
     <footer class="bg-slate-50 border-t border-light-border py-12 text-sm text-light-muted">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
