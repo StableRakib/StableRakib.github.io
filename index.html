@@ -124,6 +124,7 @@
                 <a href="#assessment" class="hover:text-light-text transition-colors">Free Assessment</a>
                 <a href="#services" class="hover:text-light-text transition-colors">Services</a>
                 <a href="#testimonials" class="hover:text-light-text transition-colors">Testimonials</a>
+                <a href="#faq" class="hover:text-light-text transition-colors">FAQ</a>
                 <a href="#pricing" class="hover:text-light-text transition-colors">Pricing</a>
             </nav>
 
@@ -144,6 +145,7 @@
             <a href="#services" class="block text-light-muted hover:text-brand-600">Services</a>
             <a href="#pricing" class="block text-light-muted hover:text-brand-600">Pricing</a>
             <a href="#testimonials" class="block text-light-muted hover:text-brand-600">Testimonials</a>
+            <a href="#faq" class="block text-light-muted hover:text-brand-600">FAQ</a>
             <a href="#booking" class="block w-full text-center px-4 py-2 mt-2 rounded-lg bg-light-text text-white font-medium">Book a Call</a>
         </div>
     </header>
@@ -351,12 +353,12 @@
                     <div class="card-light rounded-2xl p-8 text-center">
                         <div class="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center text-brand-500 text-xl font-bold mx-auto mb-6">1</div>
                         <h3 class="text-lg font-semibold text-light-text mb-2">Audit & Plan</h3>
-                        <p class="text-light-muted text-sm">We find exactly what is slowing down or risking your site.</p>
+                        <p class="text-light-muted text-sm">We do a thorough audit first. We find exactly what is slowing down or risking your site.</p>
                     </div>
                     <div class="card-light rounded-2xl p-8 text-center">
                         <div class="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center text-brand-500 text-xl font-bold mx-auto mb-6">2</div>
                         <h3 class="text-lg font-semibold text-light-text mb-2">Fix & Secure</h3>
-                        <p class="text-light-muted text-sm">I clean up code, optimize speed, and lock doors against hackers.</p>
+                        <p class="text-light-muted text-sm">I clean up code, optimize speed, setup maintenance and lock doors against hackers.</p>
                     </div>
                     <div class="card-light rounded-2xl p-8 text-center">
                         <div class="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center text-brand-500 text-xl font-bold mx-auto mb-6">3</div>
@@ -566,7 +568,94 @@
                 </div>-->
             </div>
         </section>
-    
+
+		<!-- FAQ Section - Light Version -->
+		<section id="faq" class="py-20 bg-slate-50 border-y border-light-border">
+			<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="text-center mb-16 space-y-3">
+					<span class="text-xs font-mono text-brand-600 uppercase tracking-widest font-semibold px-3 py-1 rounded-full bg-brand-500/10 border border-brand-400/20">
+						Got Questions?
+					</span>
+					<h2 class="text-3xl sm:text-4xl font-semibold text-light-text tracking-tight">Frequently Asked Questions</h2>
+					<p class="text-light-muted text-base">
+						Clear information about onboarding, scope boundaries, and technical response.
+					</p>
+				</div>
+
+				<div class="space-y-4" id="faq-accordion">
+					
+					<div class="card-light rounded-2xl overflow-hidden">
+						<button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none group">
+							<span class="font-semibold text-light-text text-base group-hover:text-brand-600 transition-colors">How are offsite backups stored and accessed?</span>
+							<i class="fa-solid fa-chevron-down text-brand-500 transition-transform duration-200 shrink-0 ml-4"></i>
+						</button>
+						<div class="faq-content hidden px-6 pb-5 text-sm text-light-muted border-t border-light-border pt-4 leading-relaxed">Backups are stored independently from your web host in encrypted form in cloud storage. And Pro/Custom Plan also gets your backups in my Dedicated Offline Storage Setup. This ensures that even if your server fails or gets compromised, your backup remains 100% safe and instantly restorable.
+						</div>
+					</div>
+
+					<div class="card-light rounded-2xl overflow-hidden">
+						<button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none group">
+							<span class="font-semibold text-light-text text-base group-hover:text-brand-600 transition-colors">What happens if my site is compromised or experiences a security incident?</span>
+							<i class="fa-solid fa-chevron-down text-brand-500 transition-transform duration-200 shrink-0 ml-4"></i>
+						</button>
+						<div class="faq-content hidden px-6 pb-5 text-sm text-light-muted border-t border-light-border pt-4 leading-relaxed">
+							First, the affected site is assessed and immediate risk is contained where possible. And I get your site back online safely at the earliest possible time. 
+							<br />
+							<strong>NOTE: </strong> Digital Forensic Investigation, Hosting/Server level extensive malware remediation obviously not included.
+						</div>
+					</div>
+
+					<div class="card-light rounded-2xl overflow-hidden">
+						<button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none group">
+							<span class="font-semibold text-light-text text-base group-hover:text-brand-600 transition-colors">Are monthly care plans a substitute for penetration testing?</span>
+							<i class="fa-solid fa-chevron-down text-brand-500 transition-transform duration-200 shrink-0 ml-4"></i>
+						</button>
+						<div class="faq-content hidden px-6 pb-5 text-sm text-light-muted border-t border-light-border pt-4 leading-relaxed">
+							No. Monthly care plans provide routine security hardening, vulnerability reviewing, and access control maintenance. They are not formal penetration tests, compliance certifications, or security audits. If you require additional/advanced services please do let me know.
+						</div>
+					</div>
+
+					<div class="card-light rounded-2xl overflow-hidden">
+						<button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none group">
+							<span class="font-semibold text-light-text text-base group-hover:text-brand-600 transition-colors">What services are excluded from monthly care retainers?</span>
+							<i class="fa-solid fa-chevron-down text-brand-500 transition-transform duration-200 shrink-0 ml-4"></i>
+						</button>
+						<div class="faq-content hidden px-6 pb-5 text-sm text-light-muted border-t border-light-border pt-4 leading-relaxed">
+							Full custom website redesigns, custom plugin development, major server migrations, third-party software licensing fees, hosting billing disputes and anything that is not mentioned on the website or the contract are excluded from routine monthly care. These are quoted separately.
+						</div>
+					</div>
+
+					<div class="card-light rounded-2xl overflow-hidden">
+						<button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none group">
+							<span class="font-semibold text-light-text text-base group-hover:text-brand-600 transition-colors">Is response time guaranteed as resolution time?</span>
+							<i class="fa-solid fa-chevron-down text-brand-500 transition-transform duration-200 shrink-0 ml-4"></i>
+						</button>
+						<div class="faq-content hidden px-6 pb-5 text-sm text-light-muted border-t border-light-border pt-4 leading-relaxed">
+							Support response times indicate when request triage begins. Total resolution time depends on complexity, third-party hosting dependencies, and vendor response times.
+						</div>
+					</div>
+
+					<div class="card-light rounded-2xl overflow-hidden">
+						<button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none group">
+							<span class="font-semibold text-light-text text-base group-hover:text-brand-600 transition-colors">Is there any long-term contract or cancellation fee?</span>
+							<i class="fa-solid fa-chevron-down text-brand-500 transition-transform duration-200 shrink-0 ml-4"></i>
+						</button>
+						<div class="faq-content hidden px-6 pb-5 text-sm text-light-muted border-t border-light-border pt-4 leading-relaxed">Zero long-term contracts. All plans are strictly month-to-month. You can upgrade, downgrade, or cancel your retainer subscription at any time with a single message.</div>
+					</div>
+
+					<div class="card-light rounded-2xl overflow-hidden">
+						<button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none group">
+							<span class="font-semibold text-light-text text-base group-hover:text-brand-600 transition-colors">Can we handle billing through Fiverr or Upwork?</span>
+							<i class="fa-solid fa-chevron-down text-brand-500 transition-transform duration-200 shrink-0 ml-4"></i>
+						</button>
+						<div class="faq-content hidden px-6 pb-5 text-sm text-light-muted border-t border-light-border pt-4 leading-relaxed">Yes. Depending on how you discovered my service, we can set up contracts on Fiverr or Upwork where the platform handles secure payment processing.</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		
+		<!-- Pricing Section -->
 		<section id="pricing" class="py-20 bg-white border-y border-light-border fade-up">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-10">
@@ -741,94 +830,110 @@
     <!-- Application Logic -->
     <script>
         // Mobile Menu Logic
-        const mobileBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const menuIcon = document.getElementById('menu-icon');
+		const mobileBtn = document.getElementById('mobile-menu-btn');
+		const mobileMenu = document.getElementById('mobile-menu');
+		const menuIcon = document.getElementById('menu-icon');
 
-        if(mobileBtn) {
-            mobileBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-                menuIcon.classList.toggle('fa-bars');
-                menuIcon.classList.toggle('fa-xmark');
-            });
-        }
+		if(mobileBtn) {
+			mobileBtn.addEventListener('click', () => {
+				mobileMenu.classList.toggle('hidden');
+				menuIcon.classList.toggle('fa-bars');
+				menuIcon.classList.toggle('fa-xmark');
+			});
+		}
 
-        // Close mobile menu on link click
-        document.querySelectorAll('#mobile-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-                menuIcon.classList.add('fa-bars');
-                menuIcon.classList.remove('fa-xmark');
-            });
-        });
+		document.querySelectorAll('#mobile-menu a').forEach(link => {
+			link.addEventListener('click', () => {
+				mobileMenu.classList.add('hidden');
+				menuIcon.classList.add('fa-bars');
+				menuIcon.classList.remove('fa-xmark');
+			});
+		});
 
-        // Currency Toggle
-        function setCurrency(currency) {
-            const btnUsd = document.getElementById('btn-usd');
-            const btnEur = document.getElementById('btn-eur');
-            const syms = document.querySelectorAll('.cur-sym');
-            
-            // Define active and inactive classes
-            const activeClasses = ['bg-white', 'text-light-text', 'shadow-sm'];
-            const inactiveClasses = ['text-light-muted', 'hover:text-light-text'];
+		// FAQ Toggle — FIX
+		function toggleFaq(btn) {
+			const content = btn.nextElementSibling;
+			const icon = btn.querySelector('i.fa-chevron-down');
+			const isHidden = content.classList.contains('hidden');
 
-            if (currency === 'USD') {
-                btnUsd.classList.add(...activeClasses);
-                btnUsd.classList.remove(...inactiveClasses);
-                btnEur.classList.remove(...activeClasses);
-                btnEur.classList.add(...inactiveClasses);
-                syms.forEach(el => el.innerText = '$');
-            } else {
-                btnEur.classList.add(...activeClasses);
-                btnEur.classList.remove(...inactiveClasses);
-                btnUsd.classList.remove(...activeClasses);
-                btnUsd.classList.add(...inactiveClasses);
-                syms.forEach(el => el.innerText = '€');
-            }
-        }
+			// close all
+			document.querySelectorAll('#faq-accordion .faq-content').forEach(el => {
+				el.classList.add('hidden');
+			});
+			document.querySelectorAll('#faq-accordion .fa-chevron-down').forEach(ic => {
+				ic.style.transform = 'rotate(0deg)';
+			});
 
-        // Gig Modal Logic
-        const gigModal = document.getElementById('gig-modal');
-        const gigContent = document.getElementById('gig-modal-content');
-        
-        function openGigModal() {
-            event.preventDefault();
-            gigModal.classList.remove('hidden');
-            gigModal.classList.add('flex');
-            // Small delay for transition
-            setTimeout(() => {
-                gigModal.classList.remove('opacity-0');
-                gigContent.classList.remove('scale-95');
-            }, 10);
-        }
+			// open clicked if it was hidden
+			if (isHidden) {
+				content.classList.remove('hidden');
+				if(icon) icon.style.transform = 'rotate(180deg)';
+			}
+		}
 
-        function closeGigModal() {
-            gigModal.classList.add('opacity-0');
-            gigContent.classList.add('scale-95');
-            setTimeout(() => {
-                gigModal.classList.add('hidden');
-                gigModal.classList.remove('flex');
-            }, 200);
-        }
+		// Currency Toggle
+		function setCurrency(currency) {
+			const btnUsd = document.getElementById('btn-usd');
+			const btnEur = document.getElementById('btn-eur');
+			const syms = document.querySelectorAll('.cur-sym');
+			const activeClasses = ['bg-white', 'text-light-text', 'shadow-sm'];
+			const inactiveClasses = ['text-light-muted', 'hover:text-light-text'];
 
-        // Close modal on outside click
-        gigModal.addEventListener('click', (e) => {
-            if (e.target === gigModal) {
-                closeGigModal();
-            }
-        });
+			if (currency === 'USD') {
+				btnUsd.classList.add(...activeClasses);
+				btnUsd.classList.remove(...inactiveClasses);
+				btnEur.classList.remove(...activeClasses);
+				btnEur.classList.add(...inactiveClasses);
+				syms.forEach(el => el.innerText = '$');
+			} else {
+				btnEur.classList.add(...activeClasses);
+				btnEur.classList.remove(...inactiveClasses);
+				btnUsd.classList.remove(...activeClasses);
+				btnUsd.classList.add(...inactiveClasses);
+				syms.forEach(el => el.innerText = '€');
+			}
+		}
 
-        // Intersection Observer for Fade-up Animation (Clean, ~10 lines)
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('is-visible');
-                    observer.unobserve(entry.target); // Run once
-                }
-            });
-        }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+		// Gig Modal Logic
+		const gigModal = document.getElementById('gig-modal');
+		const gigContent = document.getElementById('gig-modal-content');
 
-        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+		function openGigModal() {
+			event.preventDefault();
+			gigModal.classList.remove('hidden');
+			gigModal.classList.add('flex');
+			setTimeout(() => {
+				gigModal.classList.remove('opacity-0');
+				gigContent.classList.remove('scale-95');
+			}, 10);
+		}
+
+		function closeGigModal() {
+			gigModal.classList.add('opacity-0');
+			gigContent.classList.add('scale-95');
+			setTimeout(() => {
+				gigModal.classList.add('hidden');
+				gigModal.classList.remove('flex');
+			}, 200);
+		}
+
+		if(gigModal){
+			gigModal.addEventListener('click', (e) => {
+				if (e.target === gigModal) closeGigModal();
+			});
+		}
+
+		// Fade-up
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('is-visible');
+					observer.unobserve(entry.target);
+				}
+			});
+		}, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+
+		document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
     </script>
 </body>
 </html>
