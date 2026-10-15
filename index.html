@@ -679,6 +679,19 @@
 					</div>
 
 					<div class="card-light rounded-2xl overflow-hidden">
+                        <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none group">
+                            <span class="font-semibold text-light-text text-base group-hover:text-brand-600 transition-colors">Can you provide US invoices and EU VAT reverse charge invoices?</span>
+                            <i class="fa-solid fa-chevron-down text-brand-500 transition-transform duration-200 shrink-0 ml-4"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-5 text-sm text-light-muted border-t border-light-border pt-4 leading-relaxed">
+                            <strong>US: Yes.</strong> I provide US-compliant invoices with $0 US sales tax and 0% withholding. I'm a non-US person performing services entirely outside the US. W-8BEN form available on request. Payment via Wise ACH, Payoneer, or BD Bank wire.<br><br>
+                            <strong>EU: Yes.</strong> For EU B2B clients with a valid VAT ID, I provide 0% VAT invoices under EU VAT reverse charge - Article 44 & 196 EU VAT Directive - VIES validated. For EU B2C, 0% outside scope as non-EU supplier. Payment via Wise SEPA, Payoneer, or Bank Transfer.<br><br>
+                            <strong>BD: All exports are 0% BD VAT</strong> - Zero-rated export of services under VAT and SD Act 2012, Sec 23. Funds received via banking channel for export proof.<br><br>
+                            <em>Upwork/Freelancer: VAT handled by platform.</em>
+                        </div>
+                    </div>
+
+					<div class="card-light rounded-2xl overflow-hidden">
 						<button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none group">
 							<span class="font-semibold text-light-text text-base group-hover:text-brand-600 transition-colors">Are monthly care plans a substitute for penetration testing?</span>
 							<i class="fa-solid fa-chevron-down text-brand-500 transition-transform duration-200 shrink-0 ml-4"></i>
@@ -735,7 +748,7 @@
                     <h2 class="text-3xl font-semibold text-light-text">Pricing Plans</h2>
                     <p class="text-light-muted mt-3 text-sm">GDPR-Ready WordPress Care for EU Businesses | No Contracts | Cancel Anytime | EU VAT Reverse Charge | Invoices in EUR
                     <br>
-                    20% off if you pay yearly - Get 2 months free.</p>
+                    <strong>20% off if you pay yearly - Get 2 months free.</strong></p>
                 </div>
 
 
@@ -745,7 +758,7 @@
                         <h3 class="text-lg font-semibold text-light-text mb-1">Essential</h3>
                         <p class="text-xs text-light-muted mb-6">Basic care for simple sites.</p>
                         <div class="mb-6">
-                            <span class="text-3xl font-bold text-light-text"><span class="cur-sym">€</span><span class="price-ess">49</span></span>
+                            <span class="text-3xl font-bold text-light-text"><span class="cur-sym">€</span><span class="price-ess">99</span></span>
                             <span class="text-light-muted text-sm">/mo</span>
                         </div>
                         <ul class="space-y-3 text-sm text-light-text mb-8 flex-grow">
@@ -765,7 +778,7 @@
                         <h3 class="text-lg font-semibold text-light-text mb-1">Business</h3>
                         <p class="text-xs text-light-muted mb-6">Full care for active businesses.</p>
                         <div class="mb-6">
-                            <span class="text-3xl font-bold text-light-text"><span class="cur-sym">€</span><span class="price-bus">99</span></span>
+                            <span class="text-3xl font-bold text-light-text"><span class="cur-sym">€</span><span class="price-bus">149</span></span>
                             <span class="text-light-muted text-sm">/mo</span>
                         </div>
                         <ul class="space-y-3 text-sm text-light-text mb-8 flex-grow">
@@ -775,7 +788,7 @@
                             <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> Advanced Performance Optimization + CDN / WAF Setup - Cloudflare EU PoP</li>
                             <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> GDPR Support: Cookie consent + Security Headers check</li>
                             <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> <strong>Incident Response Advanced - If hacked, we restore in 2 hours</strong></li>
-                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> <strong>Support: Email 12-24h + WhatsApp Text for urgent - 09:00-22:00 CET</strong></li>
+                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> <strong>Support: Email 12-24h + WhatsApp Text for urgent - 06:00-20:00 CET</strong></li>
                         </ul>
                         <a href="#booking" class="w-full block py-2.5 text-center rounded-lg bg-light-text text-white font-medium hover:bg-black transition-colors">Select Plan</a>
                     </div>
@@ -795,12 +808,11 @@
                             <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> Staging Site + 1 Hour Dev / Month Included</li>
                             <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> Enhanced monitoring frequency</li>
                             <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> Priority Support: 8-12h Email + WhatsApp Call + Video Call</li>
-                            <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5"></i> High priority email support (8–12h) + WhatsApp text/call support</li>
                         </ul>
                         <a href="#booking" class="w-full block py-2.5 text-center rounded-lg bg-slate-100 text-light-text font-medium hover:bg-slate-200 transition-colors">Talk to Me</a>
                     </div>
                 </div>
-                
+
                 <!-- Payment Methods -->
                 <div class="text-center">
                     <p class="text-sm font-medium text-light-muted mb-4">Accepted Payment Methods</p>
@@ -810,7 +822,11 @@
                         <img src="images/wise.png" alt="Wise" class="h-5 object-contain" loading="lazy">
                         <img src="images/payoneer.png" alt="Payoneer" class="h-5 object-contain" loading="lazy">
                     </div>
-                    <!--<p class="text-[11px] text-light-muted mt-4">EU VAT reverse charge available. US invoices available.</p>-->
+                    <p class="text-[11px] text-light-muted mt-4">
+                    EU VAT reverse charge - 0% VAT for EU B2B with valid VAT ID |
+                    US invoices - 0% US Sales Tax - W-8BEN available |
+                    BD VAT 0% - Zero-rated IT export
+                    </p>
                 </div>
 
             </div>
